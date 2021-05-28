@@ -9,6 +9,19 @@ Przykład fastAPI na warsztaty Kassk &amp; Mrozy 2021
 * http://office.abixedukacja.eu:5000/welcome-json/adam?welcome=uuu
 * http://office.abixedukacja.eu:5000/auth
 
-Serwer: 
+Serwer:
 * http://office.abixedukacja.eu:5000/
 * Na nim pokażemy `tail -f /tmp/kassk_mrozy_2021.log `
+
+----
+Przykład połączenia z IDLE:
+```
+import requests
+r = requests.get("http://office.abixedukacja.eu:5000/welcome/?user=Adasiek")
+r.content
+r = requests.get("http://office.abixedukacja.eu:5000/welcome-json/adam")
+r.content
+r.json()
+```
+
+Dużo więcej na stronie: https://docs.python-requests.org/en/master/user/quickstart/
