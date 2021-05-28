@@ -10,10 +10,12 @@ def index():
     html = "<h2>KASSK & Mrozy 2021</h2>"
     return fastapi.responses.HTMLResponse(html)
 
+
 @app.get("/welcome/")
 def welcome(user: str, welcome: str = "Python"):
     html = f"<h3>Witaj {user} - z tej strony {welcome}...</h3>"
     return fastapi.responses.HTMLResponse(html)
+
 
 @app.get("/welcome-json/{user}")
 def welcome(user: str, welcome: str = "Python"):
@@ -22,6 +24,7 @@ def welcome(user: str, welcome: str = "Python"):
         "user_name": user,
         "welcome by": welcome,
     }
+
 
 @app.get("/auth")
 def auth_get():
@@ -38,7 +41,6 @@ def auth_get():
     return fastapi.responses.HTMLResponse(html)
 
 
-
 @app.post("/auth")
 def auth_test(auth_id: str = Form(...)):
     if auth_id == "KASSK_MROZY":
@@ -46,6 +48,7 @@ def auth_test(auth_id: str = Form(...)):
     else:
         html = "<h3>Error !!!</h3>"
     return fastapi.responses.HTMLResponse(html)
+
 
 if __name__ == "__main__":
     uvicorn.run(app)
