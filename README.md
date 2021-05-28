@@ -8,3 +8,7 @@ Przykład fastAPI na warsztaty Kassk &amp; Mrozy 2021
 * http://127.0.0.1:8000/welcome-json/adam
 * http://127.0.0.1:8000/welcome-json/adam?welcome=uuu
 * http://127.0.0.1:8000/auth
+
+Serwer: 
+* http://office.abixedukacja.eu:5000/
+* Na nim pokażemy `tail -f /tmp/kassk_mrozy_2021.log `
