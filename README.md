@@ -25,3 +25,10 @@ r.json()
 ```
 
 Dużo więcej na stronie: https://docs.python-requests.org/en/master/user/quickstart/
+
+----
+
+Materiały z projektu Koduj z klasą (rok 2014) - mogą wymagać aktualizacji kodów:
+
+* https://python101.readthedocs.io/pl/latest/
+* https://github.com/koduj-z-klasa/python101
